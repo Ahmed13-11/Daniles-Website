@@ -1,0 +1,273 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --maincolor:#F7F7F7;
+}
+/* ===================================== */
+/* Navbar */
+/* ===================================== */
+.navbar-expand-lg .navbar-nav .active {
+  text-decoration: underline;
+}
+.navbar-nav .nav-link {
+  color: black !important;
+}
+/* ===================================== */
+/* START HOME */
+/* ===================================== */
+#Home {
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../imges/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+#Home .homecontent h5 {
+  font-size: 50px;
+  font-weight: 800;
+}
+#Home .homecontent h1 {
+  font-size: 76px;
+  font-weight: 400;
+}
+#Home .iconscontent {
+  width:25%;
+}
+
+#Home h1:after {
+  content: "";
+  animation: typing 8s infinite linear;
+}
+@keyframes typing {
+  0%{content:"|";}
+  1%{content:"Ahm|";}
+  2%{content:"Ahmed |";}
+  3%{content:"Ahmed Sam|";}
+  4%{content:"Ahmed Samir|";}
+  36%{content:"Ahmed Sam|";}
+  37%{content:"Ahmed |";}
+  38%{content:"Ahm|";}
+  39%{content:"|";}
+  40%{content:"De|";}
+  41%{content:"Desi|";}
+  42%{content:"Design|";}
+  43%{content:"Designer|";}
+  75%{content:"Design|";}
+  76%{content:"Desi|";}
+  77%{content:"De|";}
+  78%{content:"|";}
+  79%{content:"De|";}
+  80%{content:"Deve|";}
+  81%{content:"Developer|";}
+  97%{content:"Develo|";}
+  98%{content:"Deve|";}
+  99%{content:"De|";}
+  100%{content:"|";}
+}
+@media only screen and (max-width: 992px) {
+  #Home h1 {font-size: 76px;}
+  #Home h5 {font-size: 50px;}
+}
+@media only screen and (max-width: 992px) {
+  #Home .iconscontent {width:60%;}
+}
+@media only screen and (max-width: 768px) {
+  #Home .homecontent h1 {font-size: 50px;}
+  #Home .homecontent h5 {font-size: 40px;}
+  #Home .iconscontent {width:85%;}
+}
+@media only screen and (max-width: 600px) {
+  #Home .homecontent h1 {font-size: 30px;}
+  #Home .homecontent h5 {font-size: 20px;}
+  #Home .iconscontent {width:100%;}
+}
+
+/* ===================================== */
+/* START ABOUT */
+/* ===================================== */
+.progress, .progress-stacked {
+  height: 30px;
+}
+#fbtn-about:hover {
+  background-color: white;
+  color: black;
+}
+#sbtn-about:hover {
+  background-color: black;
+  color: white;
+}
+/* ===================================== */
+/* START Servies */
+/* ===================================== */
+#Services {
+  background-color: var(--maincolor);
+  padding-bottom: 100px;
+}
+#Services h1 {
+  font-size: 50px;
+  font-weight: 800;
+  padding: 90px 0;
+} 
+#Services .box .boxcontain, #Contact .box .boxcontain {
+  padding: 40px;
+}
+.circle {
+  background-color: var(--maincolor);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+}
+.circle:hover {
+  background-color: black;
+}
+.circle:hover i {
+  color: white;
+}
+/* ===================================== */
+/* START Portfolio */
+/* ===================================== */
+#Works {
+  padding-bottom: 100px;
+}
+#Works h1 {
+  font-size: 50px;
+  font-weight: 800;
+  padding: 90px 0;
+}
+#Works .nav .nav-link {
+  color: black;
+  font-weight: 800;
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+#Works .box:hover .layer {
+  opacity: 1;
+  background-color: white;
+  color: black;
+}
+#Works .box:hover i {
+  margin-top: 5px;
+}
+#Works .box i:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+#Works .layer{
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+  background: rgba(255, 255, 255, 0.95);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icons-search i {
+  margin-top: 15px;
+  padding: 20px 10px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  transition: 0.2s;
+}
+/* ===================================== */
+/* START Testimonials */
+/* ===================================== */
+#Testimonials {
+  background-color: var(--maincolor);
+  padding-bottom: 100px;
+}
+#Testimonials h1 {
+  font-size: 50px;
+  font-weight: 800;
+  padding: 90px 0;
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+/* ===================================== */
+/* START Team */
+/* ===================================== */
+#Team {
+  background-color: var(--maincolor);
+  padding-bottom: 100px;
+}
+#Team .card {
+  background-color: var(--maincolor);
+  border: 0px;
+}
+#Team h1 {
+  font-size: 50px;
+  font-weight: 800;
+  padding: 90px 0;
+}
+#Team .card .cardcontain {
+  background-color: #5B5B5B;
+  border-radius: 0px 0px 5px 5px;
+}
+#Team .layer {
+  position: absolute;
+  top: 100px;
+  bottom: 100px;
+  left: 100px;
+  right: 100px;
+  background: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform:rotateY(180deg);
+}
+#Team .box-cot:hover .layer {
+  opacity: 1;
+  background-color: white;
+  color: black;
+  transform:rotateY(360deg);
+  top: 8px;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+}
+/* ===================================== */
+/* START CONTACT */
+/* ===================================== */
+#Contact {
+  padding-bottom: 100px;
+}
+#Contact h1 {
+  font-size: 50px;
+  font-weight: 800;
+  padding: 90px 0;
+}
+#Contact input, #Contact textarea {
+  background-color: #F4F4F4;
+}
+#Contact button {
+  color: black;
+}
+#Contact button:hover {
+  background-color: black;
+  color: white;
+}
+/* ===================================== */
+/* START Footer */
+/* ===================================== */
+footer p {
+  margin-bottom:0;
+}
